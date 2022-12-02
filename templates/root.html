@@ -1,0 +1,44 @@
+{% extends 'layout/base.html' %}
+
+
+{% block content %}
+<!-- <span class="badge text-bg-success">request path: {{ request.path }}</span> -->
+<div class="row">
+    <div class="col">
+        <div class="card text-bg-success">
+            <div class="card-header">request.path</div>
+            <div class="card-body">
+                {{ request.path }}
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row mt-3">
+    <div class="col">
+        <div class="card">
+            <div class="card-header">Tensorflow - Version</div>
+            <div class="card-body">{{ version }}</div>
+        </div>
+    </div>
+</div>
+<div class="row mt-3">
+    <div class="col">
+        <div class="card">
+            <div class="card-header">Tensorflow - Predictions</div>
+            <div class="card-body">{{ predictions }}</div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card">
+            <div class="card-header">Tensorflow - Possibilities</div>
+            <div class="card-body">{{ possibilities }}</div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card">
+            <div class="card-header">Tensorflow - probability_model_results</div>
+            <div class="card-body">{{ probability_model_results }}</div>
+        </div>
+    </div>
+</div>
+{% endblock content %}

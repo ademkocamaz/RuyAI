@@ -1,0 +1,7 @@
+python -m venv venv
+venv/Scripts/Activate.ps1
+python -m pip install --upgrade pip setuptools
+pip install django
+pip install tensorflow
+pip freeze > requirements.txt
+django-admin startproject core
